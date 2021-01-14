@@ -1,0 +1,117 @@
+<div style="width: 40em;">
+  <h2>
+      Information
+  </h2>
+<p>
+<font size="4">Bevor wir mit dem Experiment anfangen, brauchen wir noch einige Informationen von Dir. Alle personenbezogenen Angaben werden anonymisiert gespeichert und eine sp&auml;tere Zuordnung der angegebenen Daten zu Versuchspersonen wird den Forschenden nicht mehr m&ouml;glich sein.
+  Wenn Du fertig bist, klicke bitte auf "Fortsetzen".</font>
+</p>
+
+<p><font size="4">1. Alter:</font><input name="Alter" type="text" size="30" class="obligatory" />
+
+<br>
+<br>
+<p><font size="4">2. Geschlecht</font>:<input name="Geschlecht" type="radio" value="male" class="obligatory" id="cgendermale" /><label for="cgendermale"><font size="4">M&auml;nnlich</font></label>
+                   <input name="Geschlecht" type="radio" value="female" id="cgenderfemale"/><label for="cgenderfemale"><font size="4"> Weiblich</font></label>
+                   <input name="Geschlecht" type="radio" value="divers" id="cgenderother"/><label for="cgenderother"> <font size="4">Divers</font></label>
+ 
+<br>
+<br>
+<p><font size="4">3. Was ist Dein h&ouml;chster Bildungsabschluss?</font>:
+  <select  name="Bildungsabschluss" required="true" id="Bildungsabschluss">
+      <option value="kein Abschluss">kein Abschluss</option>
+      <option value="Schulabschluss">Schulabschluss</option>
+      <option value="Abitur oder gleichwertiger Abschluss">Abitur oder gleichwertiger Abschluss</option>
+      <option value="Studium ohne Abschluss">Studium ohne Abschluss</option>
+	  <option value="Ausbildung">Ausbildung</option>
+	  <option value="Bachelor">Bachelor</option>
+	  <option value="Master">Master</option>
+	  <option value="Promotion">Promotion</option>
+ </select>
+  
+<br>
+<br>   
+ <p><font size="4">4. Stelle Dir vor, die Leiter (s. unten) repräsentiert den relativen Sozialstatus der Menschen in Deutschland. An der Spitze der Leiter stehen Menschen mit relativ hohem Status – diejenigen, die das meiste Geld, die beste Bildung und die angesehensten Arbeitsplätze haben. Ganz unten sind Menschen mit relativ niedrigem Status – beispielsweise als arbeitslos Gemeldete. Relativ weit unten zu verorten wären auch diejenigen, die nur wenig Geld verdienen, einen niedrigen Bildungstand haben, und / oder Berufe ausüben, die die Gesellschaft als eher wenig respektabel ansieht.
+  <br>
+ <br>Wo würdest Du dich auf dieser Leiter einordnen? Wähle bitte die Sprosse, die Deinem empfundenen Sozialstatus am ehesten entspricht.
+<br> </font></p>
+
+<a href="https://ibb.co/7zkthfG"><img src="https://i.ibb.co/SxfwSjK/Leiter.jpg" alt="Leiter" border="0" width=220 height=300></a>
+  
+<p><font size="4">Ihre Antwort</font>:
+ <select  name="Socialstatus" required="true" id="Socialstatus">
+      <option value="10">A</option>
+      <option value="9">B</option>
+      <option value="8">C</option>
+      <option value="7">D</option>
+    <option value="6">E</option>
+      <option value="5">F</option>
+        <option value="4">G</option>
+        <option value="3">H</option>
+        <option value="2">I</option>
+        <option value="1">J</option>
+      </select>  
+<br>
+<br>
+
+<p><font size="4">5. Bist Du in Deutschland geboren?</font></p>
+  <input name="Herkunft" type="radio" value="Ja" class="obligatory" id="Herkunft_Ja" /><label for="Herkunft_Ja"><font size="4">Ja</font></label>
+                   <input name="Herkunft" type="radio" value="Nein" id="Herkunft_Nein"/><label for="Herkunft_Nein"><font size="4"> Nein</font></label>
+                  
+<br>
+<br>
+ 
+<p><font size="4">6. Mit welcher Sprache bist Du zuhause aufgewachsen?</font></p>
+  <input type="radio" name="Sprache" id="dialekt"class="obligatory">
+  <label for="dialekt"><font size="4">Dialekt</font></label>
+    <div class="reveal-if-active">
+        <label for="which-dialekt"><font size="4">Bitte geben Sie an, welcher?</font></label>
+        <input type="text" id="which-dialekt" name="which-dialekt" class="require-if-active" data-require-pair="#dialekt">
+   </div>
+   
+  <input type="radio" id="umgangsprache" name="Sprache" required>
+  <label for="umgangsprache"><font size="4">Umgangssprachliches Hochdeutsch</font></label><br>
+ 
+  <input type="radio" id="Gepflegtes Hochdeutsch" name="Sprache" required>
+  <label for="Gepflegtes Hochdeutsch"><font size="4">Gepflegtes Hochdeutsch</font></label><br>
+ 
+  <input type="radio" id="Beides" name="Sprache" required>
+  <label for="Beides"><font size="4">Beides</font></label>
+      <div class="reveal-if-active">
+        <label for="which-dialekt"><font size="4">Bitte schreibe auf, welchen Dialekt Du verwendest:</font></label>
+        <input type="text" id="which-dialekt_beides" name="which-dialekt_beides" class="require-if-active" data-require-pair="#Beides">
+     </div>
+
+<br>
+<br>
+   
+   <p><font size="4">7. Welche Sprache sprichst Du aktuell hauptsächlich?</font></p>
+  <input type="radio" id="dialekt_aktuell" name="Sprache_aktuell" required>
+  <label for="dialekt_aktuell"><font size="4">Dialekt</font></label>
+    <div class="reveal-if-active">
+        <label for="which-dialekt_aktuell"><font size="4">Bitte gebe an, welcher?</font></label>
+        <input type="text" id="which-dialekt_aktuell" name="which-dialekt_aktuell" class="require-if-active" data-require-pair="#dialekt_aktuell">
+   </div>   
+  <input type="radio" id="umgangsprache_aktuell" name="Sprache_aktuell" required>
+  <label for="umgangsprache_aktuell"><font size="4">Umgangssprachliches Hochdeutsch</font></label><br>
+ 
+  <input type="radio" id="Gepflegtes Hochdeutsch_aktuell" name="Sprache_aktuell" required>
+  <label for="Gepflegtes Hochdeutsch_aktuell"><font size="4">Gepflegtes Hochdeutsch</font></label><br>
+
+   <input type="radio" id="Beides_aktuell" name="Sprache_aktuell" required>
+  <label for="Beides_aktuell"><font size="4">Beides</font></label>
+      <div class="reveal-if-active">
+        <label for="which-dialekt_beides_aktuell"><font size="4">Bitte schreibe auf, welchen Dialekt Du verwendest:</font></label>
+        <input type="text" id="which-dialekt_beides_aktuell" name="which-dialekt_beides_aktuell" class="require-if-active" data-require-pair="#Beides_aktuell">
+     </div>
+
+<br>
+<br>
+   
+<p><font size="4">8. Wie gut (Skala von 0 - "gar nicht" bis 100 "ausgezeichnet") sprichst und verstehst Du:</font></p>
+<form action="/action_page.php">
+  <label for="Dialekt_skala"><font size="4">a. Dialekt:</font></label><br>
+  <input type="text" id="Dialekt_skala" name="Skala" type="text" size="30" class="obligatory"/><br>
+  <label for="Hochsprache_skala"><font size="4">b. Hochsprache:</font></label><br>
+  <input type="text" id="Hochsprache_skala" name="Skala" type="text" size="30" class="obligatory"/><br><br>
+
